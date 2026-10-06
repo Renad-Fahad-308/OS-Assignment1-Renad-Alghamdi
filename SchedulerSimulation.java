@@ -159,6 +159,11 @@ class Process implements Runnable {
     public long getCreationTime() {
         return creationTime;
     }
+    // FEATURE 3: Get the total time the process has waited
+    public long getTotalWaitingTime() {
+        return totalWaitingTime;
+    }
+
     
     // Check if the process has finished (i.e., no remaining time)
     public boolean isFinished() {
