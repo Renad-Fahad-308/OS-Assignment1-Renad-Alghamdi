@@ -167,6 +167,12 @@ class Process implements Runnable {
     public long getLastReadyTime() {
         return lastReadyTime;
     }
+    // FEATURE 3: calculate the process waiting time before it starts running
+    // Ues this when the process begins executing to find how long it waited
+    public void updateWaitingTime() {
+        long currentTime = System.currentTimeMillis();
+        long waitTime = currentTime - lastReadyTime; // Time the process waited after entering the ready queue
+        totalWaitingTime += waitTime;}
 
 
     
