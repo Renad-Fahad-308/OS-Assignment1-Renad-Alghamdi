@@ -422,6 +422,31 @@ public class SchedulerSimulation {
         // Calculate the total times to use for the averages
         long totalWaitingTime = 0;
         long totalTurnaroundTime = 0;
+        // display the information for each completed process in the table
+        for (Process process : completedProcesses) {
+            // FEATURE 3: Calculate the turnaround time useing waiting time + burst time
+            long turnaroundTime = process.getTurnaroundTime();
+            String waitTimeStr = process.getTotalWaitingTime() + "ms";
+            String turnaroundStr = turnaroundTime + "ms";
+            System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET + 
+                              "  " + Colors.BRIGHT_CYAN + 
+                              String.format("%-10s", process.getName()) + Colors.RESET +
+                              Colors.YELLOW + 
+                              String.format("%-12s", process.getBurstTime() + "ms") + Colors.RESET +
+                              Colors.MAGENTA + 
+                              String.format("%-10s", process.getPriority()) + Colors.RESET +
+                              Colors.BRIGHT_GREEN + 
+                              String.format("%-15s", waitTimeStr) + Colors.RESET +
+                              Colors.BRIGHT_YELLOW + 
+                              String.format("%-18s", turnaroundStr) + Colors.RESET +
+                              "   " +
+                              Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET);
+             totalWaitingTime += process.getTotalWaitingTime();
+            totalTurnaroundTime += turnaroundTime;
+        }
+
+
+
         
     
 }
