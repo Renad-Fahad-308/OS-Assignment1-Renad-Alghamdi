@@ -443,7 +443,27 @@ public class SchedulerSimulation {
                               Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET);
              totalWaitingTime += process.getTotalWaitingTime();
             totalTurnaroundTime += turnaroundTime;
-        }
+        } 
+          // display a separator before showing the averages
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN +
+                           "╠══════════════════════════════════════════════════════════════════════════════════╣" + 
+                          Colors.RESET);
+        // Calculate the average waiting time and turnaround Time
+        double avgWaitingTime = (double) totalWaitingTime / completedProcesses.size();
+        double avgTurnaroundTime = (double) totalTurnaroundTime / completedProcesses.size();
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET + 
+                          "  " + Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          String.format("%-47s", "Averages:") + 
+                          String.format("%-15s", String.format("%.2fms", avgWaitingTime)) + 
+                          String.format("%-18s", String.format("%.2fms", avgTurnaroundTime)) + 
+                          Colors.RESET + "   " +
+                          Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET);
+         System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + 
+                          "╚══════════════════════════════════════════════════════════════════════════════════╝" + 
+                          Colors.RESET + "\n");
+    }
+}
+        
 
 
 
