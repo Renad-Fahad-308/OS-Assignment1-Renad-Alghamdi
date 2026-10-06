@@ -163,6 +163,11 @@ class Process implements Runnable {
     public long getTotalWaitingTime() {
         return totalWaitingTime;
     }
+    // FEATURE 3: Get the last time the process entered the ready queue
+    public long getLastReadyTime() {
+        return lastReadyTime;
+    }
+
 
     
     // Check if the process has finished (i.e., no remaining time)
