@@ -419,5 +419,9 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + 
                           "╠══════════════════════════════════════════════════════════════════════════════════╣" + 
                           Colors.RESET);
+        // Calculate the total times to use for the averages
+        long totalWaitingTime = 0;
+        long totalTurnaroundTime = 0;
+        
     
 }
