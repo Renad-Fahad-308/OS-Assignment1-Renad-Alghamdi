@@ -366,6 +366,8 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
                           "╚══════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
+         // FEATURE 3: show the final summary of waiting time & turnaround time
+        displayWaitingTimeSummary();
     }
 
     // Method to add a process to the queue and map, while printing a "ready"
