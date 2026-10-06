@@ -332,9 +332,11 @@ public class SchedulerSimulation {
                     // FEATURE 3: Add the finished processes to the completed list for the final summary
                     completedProcesses.add(process);
                 }
-            }
+            }else {
+                // FEATURE 3: the Process is finished,so add it to  the completed list for the final summary
+                completedProcesses.add(process);
         }
-
+        }
         // End of the scheduler simulation
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN +
                 "╔════════════════════════════════════════════════════════════════════════════════╗" +
