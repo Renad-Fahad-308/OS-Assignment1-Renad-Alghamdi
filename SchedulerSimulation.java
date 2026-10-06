@@ -173,6 +173,9 @@ class Process implements Runnable {
         long currentTime = System.currentTimeMillis();
         long waitTime = currentTime - lastReadyTime; // Time the process waited after entering the ready queue
         totalWaitingTime += waitTime;}
+    // FEATURE 3: Update the ready time when the process enters the queue again
+    public void setLastReadyTime(long time) {
+        this.lastReadyTime = time;}
 
 
     
