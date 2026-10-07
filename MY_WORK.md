@@ -129,16 +129,19 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 2, 2026, 3:51 PM]
+**What I did**: Set up my repository and prepared the starter code
 
-**Details**:
+**Details**: I forked the starter repository, renamed it, and updated the student ID in SchedulerSimulation.java to my own. I ran the program to confirm the starter code worked before adding features.
 
-**Challenges**:
 
-**Solution**:
+**Challenges**: I needed to understand the starter code and how the ready queue works before making changes
 
-**Time spent**:
+
+**Solution**:  I followed the code step by step and checked the output to understand how processes move through the ready queue
+
+
+**Time spent**: 51 minutes
 
 ---
 
