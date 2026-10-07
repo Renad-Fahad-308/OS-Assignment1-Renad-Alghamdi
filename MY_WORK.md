@@ -145,16 +145,17 @@
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [October 3, 2026, 3:53 PM]
+**What I did**:  Feature 1 – Adding Priority
 
-**Details**:
 
-**Challenges**:
+**Details**:  I started Feature 1 by adding a priority variable to the Process class. I also added a getter method to return the priority value and wrote code to generate a random priority between 1 and 10 for each process
 
-**Solution**:
+**Challenges**:  I needed to understand where to add the new variable and how to access its value
 
-**Time spent**:
+**Solution**: I checked the Process class and added the variable and getter method in the right places
+
+**Time spent**: 30 minutes
 
 ---
 
