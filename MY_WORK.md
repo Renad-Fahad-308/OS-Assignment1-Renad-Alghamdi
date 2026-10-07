@@ -159,16 +159,17 @@
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [October 5, 2026, 11:01 AM]
+**What I did**: Feature 1: Completing Priority
 
-**Details**:
 
-**Challenges**:
+**Details**: I continued Feature 1 by updating the constructor to accept a priority value. I also updated the process creation code to pass the priority and worked on displaying it in the output
 
-**Solution**:
+**Challenges**:  I needed to make sure the priority value was passed correctly when creating each process
 
-**Time spent**:
+**Solution**:  I updated the constructor and process creation code, then checked that they matched
+
+**Time spent**: 29 minutes
 
 ---
 
