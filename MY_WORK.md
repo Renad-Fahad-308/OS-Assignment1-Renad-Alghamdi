@@ -301,7 +301,7 @@ Multithreading can be useful in many applications that need to handle different 
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+From this assignment, I understood that a process is a running program with its own memory, while a thread is a part of a process that can run a task. One difference is that threads in the same process can share memory, but separate processes usually have their own memory spaces. Another difference is that creating threads usually takes fewer resources, and sharing information between them is easier than between separate processes. In my code, I used the Process class to represent each simulated process, and new Thread(process) inside addProcessToQueue() creates the Java thread that runs it. Using threads made it easier to manage the ready queue and simulate how the CPU gives each process a turn without creating a separate operating system process for each one.
 
 ## Question 2: Ready Queue Behavior
 
