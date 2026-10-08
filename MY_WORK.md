@@ -366,32 +366,37 @@ I chose P1 because its output clearly shows how a process can return to the read
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): CPU Scheduling
 
 **Description**:
-[Describe the real-world scenario.]
+An operating system may need to manage several running programs, such as a browser, a music player, and a text editor. These programs have tasks that need CPU time, just like the processes in my simulation.
+
+
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
-
-### Example 2: [Name of application/scenario]
+With Round-Robin, each runnable task gets a time quantum, and the scheduler moves to another task when its turn ends. This change is called a context switch, and it helps the CPU share its time between different tasks. I think this method is useful because it allows the programs to keep making progress and helps the system stay responsive instead of letting one task take all the CPU time.
+### Example 2: File Download Manager
 
 **Description**:
-[Describe the real-world scenario or application.]
+A download manager can handle several files that need to be downloaded, and each file may have a different size. I can imagine using Round-Robin to divide the processing work between these downloads instead of working on only one file at a time.
+
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+Each download task can get a time quantum to process part of its work, similar to the processes in my code. When its turn ends, the scheduler can switch to another download task, which represents a context switch. This would be useful because all the download tasks could make progress, even when one file needs much more processing time than the others.
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1.I learned that creating a thread and starting it are two different steps in Java.
+
+2.I understood why P1 needed three turns to finish because its burst time was longer than 2000ms.
+
+3.I learned that Round-Robin allows other processes to run instead of letting one process use all the CPU time
 
 **Concepts I need to study more:**
-1.
-2.
+1.I want to learn more about the thread lifecycle and how the states change during execution.
+
+2.I need more practice calculating waiting time when processes return to the ready queue.
 
 ---
 
