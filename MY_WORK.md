@@ -173,16 +173,16 @@
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [October 5, 2026, 10:12 AM]
+**What I did**: Feature 2: Context Switch Counter
 
-**Details**:
+**Details**:  I worked on Feature 2 by adding a counter to track context switches during the Round-Robin simulation. I updated the code to increase the counter when the CPU switches between processes
 
-**Challenges**:
+**Challenges**: I needed to understand when the counter should increase
 
-**Solution**:
+**Solution**: I checked how the processes run and where I needed to update the counter
 
-**Time spent**:
+**Time spent**: 2 hours
 
 ---
 
