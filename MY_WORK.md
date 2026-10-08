@@ -217,13 +217,15 @@ and on October 7, 2026 (12:02 AM): I continued working on the final summary. I a
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: Approximately 7 hours and 20 minutes
 
-**Most challenging part**:
+**Most challenging part**: The most challenging part was understanding how to pass the priority value when creating each process. I needed to make sure the constructor and process creation code worked together
 
-**Most interesting learning**:
+**Most interesting learning**:  I learned how to add a priority value to each process and show it in the ready queue. I also learned how the context switch counter works during Round-Robin scheduling
 
-**What I would do differently next time**:
+
+
+**What I would do differently next time**:  Next time, I would check the code after each change instead of waiting until I finish the feature. This would help me understand each step better
 
 ---
 
