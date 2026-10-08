@@ -269,7 +269,7 @@ I tried to understand the difficult parts by reviewing the code while adding my 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+Multithreading can be useful in many applications that need to handle different tasks. For example, a web browser can load a page while the user can still scroll or click other things. A music player can also keep playing music while the user opens another part of the application. These examples helped me understand how threads can handle different tasks without stopping the whole application. In my code, Round-Robin scheduling gives each process a time quantum to run before moving to the next process. If a process still has remaining time, it returns to the ready queue and waits for another turn. I think this idea is useful because it helps the system share CPU time between tasks instead of letting one process use all the time.
 
 ### Optional: What would you like to learn more about?
 
