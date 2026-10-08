@@ -253,7 +253,7 @@ I learned how threads work in Java and how they can be used to run processes. In
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+The most challenging part for me was Feature 3, especially calculating each process's waiting time. At first, I struggled to understand when to update the waiting time. I needed to know how long a process stays in the ready queue before it gets a chance to run. It was also confusing when a process didn't finish and had to return to the queue. I had to understand how lastReadyTime and totalWaitingTime work together to calculate the correct waiting time. I also needed to understand how to calculate turnaround time using burst time and waiting time. This feature took more attention because I wanted the final summary to show the correct results for every process.
 
 ## Question 3: How did you overcome the challenges you faced?
 
