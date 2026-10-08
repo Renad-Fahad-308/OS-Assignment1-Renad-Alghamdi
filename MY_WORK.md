@@ -186,16 +186,17 @@
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [October 6, 2026, 8:41 PM and October 7, 2026, 12:02 AM ]
+**What I did**: I worked on Feature 3 to calculate waiting time and show the final summary
 
-**Details**:
+**Details**: on October 6, 2026 (8:41 PM): I started Feature 3 by adding waiting-time variables and setting their values. I added methods to calculate and update waiting time when a process went back to the ready queue. I also added a list to save completed processes.
+and on October 7, 2026 (12:02 AM): I continued working on the final summary. I added waiting time and turnaround time for each completed process. I also calculated the averages and added them to the summary
 
-**Challenges**:
+**Challenges**: I had some difficulty understanding how waiting time changes when a process goes back to the ready queue
 
-**Solution**:
+**Solution**: I followed the processes in the ready queue and checked how the waiting time was updated. This helped me understand how it works
 
-**Time spent**:
+**Time spent**: 3 hours and 30 minutes
 
 ---
 
