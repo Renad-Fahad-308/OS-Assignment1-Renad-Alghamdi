@@ -261,7 +261,7 @@ The most challenging part for me was Feature 3, especially calculating each proc
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I tried to understand the difficult parts by reviewing the code while adding my changes. I worked on each feature and checked the changes before moving on to the next. In Feature 3, I focused on the updateWaitingTime() method to understand how the waiting time is calculated. I also reviewed how setLastReadyTime() updates the time when a process returns to the ready queue. After finishing all three features, I ran the program to check the output. I checked the final summary to see how the program displayed the waiting time and turnaround time for each process. This helped me understand how the different parts of my code work together.
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
