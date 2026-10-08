@@ -245,7 +245,7 @@ and on October 7, 2026 (12:02 AM): I continued working on the final summary. I a
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I learned how threads work in Java and how they can be used to run processes. In my code, the Process class implements Runnable, and the run() method contains the work that each process does. I understood that Thread.start() starts the thread, while Thread. join() makes the main thread wait until it finishes. I also learned that Thread.sleep() simulates the time a process spends running. One thing that surprised me was that a process can run for one time quantum and still need more time to finish. This helped me understand why the process returns to the ready queue and waits for another turn. After working on this assignment, I understand better how threads and Round-Robin scheduling work together.
 
 ## Question 2: What was the most challenging part of this assignment?
 
