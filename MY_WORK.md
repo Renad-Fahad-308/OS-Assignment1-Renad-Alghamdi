@@ -313,15 +313,32 @@ From this assignment, I understood that a process is a running program with its 
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+When I checked my output, I noticed that P1 did not finish after its first time quantum because it needed more CPU time. Its burst time was 4696ms, but the time quantum was only 2000ms, so it still had 2696ms left after the first turn. The scheduler placed P1 at the end of the ready queue, and when it ran again, its remaining time became 696ms. P1 was added back to the queue two times and finally completed during its third turn. I understood from this example that Round-Robin is fair because it allows other processes to use the CPU while P1 is waiting for another turn.
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+? P1 (Priority: 4) added to ready queue ? Burst time: 4696ms
+...
+? P1 executing quantum [2000ms]
+? P1 completed quantum 2000ms
+Remaining time: 2696ms
+? P1 yields CPU for context switch
+? P1 (Priority: 4) added to ready queue ? Burst time: 4696ms
+...
+? P1 executing quantum [2000ms]
+? P1 completed quantum 2000ms
+Remaining time: 696ms
+? P1 yields CPU for context switch
+? P1 (Priority: 4) added to ready queue ? Burst time: 4696ms
+...
+? P1 executing quantum [696ms]
+? P1 completed quantum 696ms
+Remaining time: 0ms
+? P1 finished execution!
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+I chose P1 because its output clearly shows how a process can return to the ready queue more than once. It needed three turns to finish, and the scheduler allowed other processes to run between those turns. This helped me see how the time quantum controls the execution time and how Round-Robin shares CPU time between processes.
 
 ## Question 3: Thread Lifecycle
 
