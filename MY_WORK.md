@@ -348,15 +348,15 @@ I chose P1 because its output clearly shows how a process can return to the read
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: P1 is in the New state when its thread is first created using new Thread(process) inside addProcessToQueue(), because it has not started running yet.
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: When the scheduler calls currentThread.start(), P1 becomes Runnable and is ready to be selected by the CPU
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: P1 starts running when the CPU executes its run() method, where it works for the allowed time quantum and updates its remaining time.
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: While P1 is executing, Thread.sleep() makes its thread enter TIMED_WAITING for a short time, and the main thread waits for P1 to finish its turn using currentThread.join().
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**:  After P1 finishes its run() method, that thread becomes Terminated, and if P1 still has remaining burst time, the scheduler creates another thread for its next turn.
 
 ## Question 4: Real-World Applications
 
